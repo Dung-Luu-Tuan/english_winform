@@ -29,11 +29,11 @@
         <TextField id="idtf" fx:id="idtf" editable="false" layoutX="158.0" layoutY="364.0" prefHeight="25.0" prefWidth="184.0" />
         <TextField id="nametf" fx:id="nametf" layoutX="158.0" layoutY="409.0" prefHeight="25.0" prefWidth="184.0" />
         <DatePicker id="datetf" fx:id="datetf" layoutX="158.0" layoutY="453.0" prefHeight="25.0" prefWidth="184.0" />
-        <Button layoutX="440.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleInsertKhoaThi" prefHeight="35.0" prefWidth="63.0" text="Thêm" />
-        <Button layoutX="607.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleDeleteKhoaThi" prefHeight="35.0" prefWidth="63.0" text="Xóa" />
-        <Button layoutX="440.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleUpdateKhoaThi" prefHeight="35.0" prefWidth="63.0" text="Sửa" />
-        <Button layoutX="607.0" layoutY="445.0" mnemonicParsing="false" onAction="#gotoDetails" prefHeight="35.0" prefWidth="63.0" text="Danh sách phòng thi" />
-        <Button layoutX="526.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="35.0" prefWidth="63.0" text="Làm mới" />
+        <Button layoutX="399.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleInsertKhoaThi" prefHeight="25.0" prefWidth="63.0" text="Thêm" />
+        <Button layoutX="550.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleDeleteKhoaThi" prefHeight="25.0" prefWidth="63.0" text="Xóa" />
+        <Button layoutX="476.0" layoutY="378.0" mnemonicParsing="false" onAction="#handleUpdateKhoaThi" prefHeight="25.0" prefWidth="63.0" text="Sửa" />
+        <Button layoutX="476.0" layoutY="436.0" mnemonicParsing="false" onAction="#gotoDetails" prefHeight="35.0" prefWidth="149.0" text="Danh sách phòng thi" />
+        <Button layoutX="625.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="25.0" prefWidth="63.0" text="Làm mới" />
         <Label layoutX="426.0" layoutY="37.0" prefHeight="17.0" prefWidth="63.0" text="Tìm kiếm" />
         <TextField id="searchField" fx:id="searchField" layoutX="503.0" layoutY="33.0" promptText="Tên khóa thi" />
     </children>
