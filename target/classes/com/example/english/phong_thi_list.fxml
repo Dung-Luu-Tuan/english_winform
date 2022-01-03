@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.english.controllers.PhongthiController">
+    <children>
+        <TableView id="tablephongthi" fx:id="tablephongthi" layoutX="36.0" layoutY="82.0" prefHeight="234.0"
+                   prefWidth="411.0">
+            <columns>
+                <TableColumn id="id" fx:id="id" prefWidth="51.0" text="id"/>
+                <TableColumn id="name" fx:id="name" prefWidth="99.0" text="Tên phòng"/>
+                <TableColumn id="trinhdo" fx:id="trinhdo" prefWidth="100.0" text="Trình độ"/>
+                <TableColumn id="cathi" fx:id="cathi" prefWidth="160.0" text="Ca thi"/>
+            </columns>
+        </TableView>
+        <Label layoutX="52.0" layoutY="31.0" prefHeight="35.0" prefWidth="380.0" text="Danh sách phòng thi của khóa:">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="482.0" layoutY="123.0" prefHeight="17.0" prefWidth="43.0" text="Id"/>
+        <Label layoutX="482.0" layoutY="171.0" text="Trình độ"/>
+        <Label layoutX="482.0" layoutY="230.0" prefHeight="17.0" prefWidth="43.0" text="Ca thi"/>
+        <TextField id="idtf" fx:id="idtf" editable="false" layoutX="549.0" layoutY="119.0" prefHeight="25.0"
+                   prefWidth="126.0"/>
+        <ComboBox id="trinhdotf" fx:id="trinhdotf" layoutX="549.0" layoutY="167.0" prefHeight="25.0" prefWidth="126.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="A2"/>
+                    <String fx:value="B1"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <ComboBox id="cathitf" fx:id="cathitf" layoutX="549.0" layoutY="226.0" prefHeight="25.0" prefWidth="126.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="A"/>
+                    <String fx:value="B"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Button layoutX="473.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleInsertPhongThi"
+                prefHeight="25.0" prefWidth="64.0" text="Thêm"/>
+        <Button layoutX="574.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Sửa"/>
+        <Button layoutX="473.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleDeletePhongThi"
+                prefHeight="25.0" prefWidth="64.0" text="Xóa"/>
+        <Button layoutX="574.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="25.0"
+                prefWidth="64.0" text="Làm mới"/>
+        <Label id="tenkhoathi" fx:id="tenkhoathi" layoutX="422.0" layoutY="31.0" prefHeight="17.0" prefWidth="143.0">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Button onAction="#gotoThisinh" id="thisinh" layoutX="36.0" layoutY="379.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="178.0"
+                text="Danh sách thi sinh của phòng"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.english.controllers.SearchController">
+    <children>
+        <Label layoutX="156.0" layoutY="33.0" prefHeight="27.0" prefWidth="92.0" text="Tìm kiếm:">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField id="searchField" fx:id="searchField" layoutX="289.0" layoutY="34.0" prefHeight="25.0" prefWidth="214.0" promptText="Tên hoặc số điện thoại" />
+        <TableView fx:id="searchTable" layoutX="36.0" layoutY="112.0" prefHeight="366.0" prefWidth="656.0">
+            <columns>
+                <TableColumn id="sbd" fx:id="sbd" prefWidth="88.0" text="Số báo danh" />
+                <TableColumn id="hoten" fx:id="hoten" prefWidth="144.0" text="Họ tên" />
+                <TableColumn id="phongthi" fx:id="phongthi" prefWidth="73.0" text="Phòng thi" />
+                <TableColumn id="nghe" fx:id="nghe" prefWidth="92.0" text="Điểm nghe" />
+                <TableColumn id="noi" fx:id="noi" prefWidth="81.0" text="Điểm nói" />
+                <TableColumn id="doc" fx:id="doc" prefWidth="93.0" text="Điểm đọc" />
+                <TableColumn id="viet" fx:id="viet" prefWidth="84.0" text="Điểm viết" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

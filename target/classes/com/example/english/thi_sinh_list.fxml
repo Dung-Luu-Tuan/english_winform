@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.english.controllers.ThisinhController">
+    <children>
+        <TableView id="tablethisinh" fx:id="tablethisinh" layoutX="14.0" layoutY="56.0" prefHeight="315.0" prefWidth="894.0">
+            <columns>
+                <TableColumn id="id" fx:id="id" prefWidth="34.0" text="id" />
+                <TableColumn id="hoten" fx:id="hoten" prefWidth="144.0" text="Họ tên" />
+                <TableColumn id="ngaysinh" fx:id="ngaysinh" prefWidth="82.0" text="Ngày sinh" />
+                <TableColumn id="gioitinh" fx:id="gioitinh" prefWidth="73.0" text="Giới tính" />
+                <TableColumn id="noisinh" fx:id="noisinh" prefWidth="66.0" text="Nơi sinh" />
+                <TableColumn id="cmnd" fx:id="cmnd" prefWidth="82.0" text="Cmnd" />
+                <TableColumn id="ngaycap" fx:id="ngaycap" prefWidth="88.0" text="Ngày cấp" />
+                <TableColumn id="noicap" fx:id="noicap" prefWidth="85.0" text="Nơi cấp" />
+                <TableColumn id="sdt" fx:id="sdt" prefWidth="112.0" text="Sđt" />
+                <TableColumn id="email" fx:id="email" prefWidth="127.0" text="Email" />
+            </columns>
+        </TableView>
+        <Label layoutX="23.0" layoutY="14.0" prefHeight="20.0" prefWidth="499.0" text="Danh sách thí sinh dự thi">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button id="insert_btn" fx:id="insert_btn" layoutX="54.0" layoutY="424.0" mnemonicParsing="false" onAction="#newThiSinh" text="Thêm" />
+        <Button id="delete_btn" fx:id="delete_btn" layoutX="133.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleDeleteThiSinh" prefHeight="25.0" prefWidth="46.0" text="Xóa" />
+        <Button id="edit_btn" fx:id="edit_btn" layoutX="218.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleEditThiSinh" prefHeight="25.0" prefWidth="46.0" text="Sửa" />
+        <Button id="refresh_btn" fx:id="refresh_btn" layoutX="309.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleRefresh" text="Làm mới" />
+        <Button onAction="#insertToPhongthi" layoutX="400.0" layoutY="424.0" mnemonicParsing="false" text="Thêm vào phòng thi" />
+
+    </children>
+</AnchorPane>
