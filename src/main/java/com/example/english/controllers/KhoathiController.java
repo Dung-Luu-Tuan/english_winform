@@ -113,8 +113,6 @@ public class KhoathiController implements Initializable {
         SortedList<khoathi> sortedData = new SortedList<>(filteredList);
 
         sortedData.comparatorProperty().bind(tablekhoathi.comparatorProperty());
-
-        tablekhoathi.getItems().clear();
         tablekhoathi.setItems(sortedData);
         clear();
     }

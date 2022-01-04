@@ -8,8 +8,8 @@ import javafx.stage.Stage;
 public class main extends Application{
     @Override
     public void start(Stage stage) throws Exception {
-            Parent root = FXMLLoader.load(getClass().getResource("khoa_thi_list.fxml"));
-            stage.setTitle("khóa thi");
+            Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+            stage.setTitle("Quản lý thi trung tâm ngoại ngữ");
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
